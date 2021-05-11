@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.header {
+  padding: 0 40px;
+  background-color: #1564c0;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header__categorie {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.header__searchbar {
+  width: 50%;
+  position: relative;
+}
+.header__searchbar input {
+  width: 75%;
+  padding: 20px;
+
+  background-color: #5485bd;
+  border: none !important;
+}
+.header__searchbar input:focus,
+.header__searchbar input:active {
+  outline: none !important;
+}
+.header__searchbar--icon {
+  position: absolute;
+  top: 0;
+  left: 35%;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.header__searchbar--icon svg {
+  display: inline;
+}
+.header__searchbar--icon p {
+  display: inline;
+  padding: 0;
+}
+
+.header__person {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.header__shopping {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+background-color: #1564c0;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  width:200px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-container {
+}
+.swiper-slide--first-img{
+    width:500px !important;
+    margin-left:10px;
+    margin-right: 10px !important;
+}
+.swiper-slide--third-img{
+    width:250px !important;
+}
+.swiper-slide--second-img{
+    width:250px !important;
+    margin-right:10px !important;
+}
+.side-img{
+    position:relative;
+    width: 10%;
+    background-color: #1564c0;
+
+}
+.side-img:before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-image: url('./images/sony-walkman.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+.container:hover .kargo{
+  display:none;
+
+}
+
+.sepet-container{
+  display:none !important;
+  padding:10px 0;
+}
+.container:hover .sepet-container{
+  display:flex !important;
+}

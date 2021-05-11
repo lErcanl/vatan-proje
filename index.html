@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+</head>
+<body>
+            <div class=header>
+                <div class="header__container" style="display:flex;" >              
+                      <img src="./images/vatan.png"  width=100 alt="">
+                      <div class="header__categorie">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                          </svg>
+                        <p>Katerigoriler</p>
+                      </div>
+                      <div class="header__searchbar">
+                     <input type="text">
+                     <div class="header__searchbar--icon">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                          </svg>
+                          <p>Ürün ara</p>
+                     </div>
+                    </div>
+                     <div class="header__person">
+                         <p>Uyelik</p>
+                         <img src="./images/man.png" width="20" alt="">
+
+                     </div>
+                     <div class="header__shopping">
+                            <img src="./images/shopping_cart.svg" width="20" alt="">
+                            <p>Sepetim <span id="clicks">0</span></p>
+                     </div>
+                  
+                </div>
+
+            </div>
+            <!-- Slider main container -->
+            <div style="display:flex;">
+                <div class="side-img">
+                </div>
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-slide--first-img" >
+                      <img src="/images/sony.png" alt="">
+                  </div>
+                  <div class="swiper-slide swiper-slide--second-img">
+                   
+                    <img src="/images/gelecek.png" width="100%" alt="">
+
+                  </div>
+                  <div class="swiper-slide swiper-slide--third-img">                      <img src="/images/general.png" alt="">
+                  </div>
+                  <div class="swiper-slide">Slide 4</div>
+                  <div class="swiper-slide">Slide 5</div>
+                  <div class="swiper-slide">Slide 6</div>
+                  <div class="swiper-slide">Slide 7</div>
+                  <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="side-img">
+
+              </div>
+
+            </div>
+            <main style="width:80%; margin:0 auto; ">
+              <div style="display:flex; justify-content: space-between; padding:25px 0;">
+              <h2 style="color:#525252; padding-top:10px;">Öne Çıkan Ürünler</h2>
+              <a href="#" style="text-decoration:none; text-transform:uppercase; font-weight: bold; font-size:13px; align-self:flex-end; color:#436c9e">Tüm Öne Çıkanlar 	&rarr;</a>
+            </div>
+<div id="related" style="display:flex; flex-wrap:wrap;">
+
+</div>  
+<div style="display:flex; justify-content: space-between; padding:25px 0;">
+  <h2 style="color:#525252; padding-top:10px;">Çok Satan Ürünler</h2>
+  <a href="#" style="text-decoration:none; text-transform:uppercase; font-weight: bold; font-size:13px; align-self:flex-end; color:#436c9e">Tüm Çok Satanlar 	&rarr;</a>
+</div>
+<div id="seller" style="display:flex; flex-wrap:wrap;">
+
+</div>            
+</main>
+              <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script src="./source.js">
+    
+
+</script>
+</body> 
+</html>
