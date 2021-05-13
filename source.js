@@ -1,8 +1,8 @@
 //swiper
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 5,
+    slidesPerView: 3,
     spaceBetween: 30,
-    slidesPerGroup: 5,
+    slidesPerGroup: 3,
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
@@ -33,32 +33,32 @@ var swiper = new Swiper(".mySwiper", {
         text="Bugün Kargoya Verilemez"
       }
       return ` 
-              <div class="container" style="padding:10px;  flex-basis:20%; border:1px solid #eee; text-align:center; display:flex; flex-direction:column; justify-content:space-between;">
+              <div class="product">
               <a href="${product.dest_url}">
               <img src="${product.img}">
               </a>
-              <div style="display:flex; justify-content:center; align-items:center;">
-              <div style="display:flex; padding-right:5px; align-items:center;">
+              <div class="product__container">
+              <div class="product__img">
               <img src="./images/star.png" width="20">
               
-              <p style="margin-left:5px;">${product.rating}</p>
+              <p class="ml-5">${product.rating}</p>
               </div>
 
-              <p style="color:#b7b7b7; padding:10px 0;">(${product.comment} Yorum)</p>
+              <p class="comment__heading" >(${product.comment} Yorum)</p>
               </div>
-              <p style="color:#b7b7b7; padding-bottom:5px;">${product.code}</p>
+              <p class="code__heading">${product.code}</p>
 
               <p>${product.title}</p>
-              <p style="color:#1b64b9; font-size:30px; font-weight:bold;"> ${product.price} ${product.cur}</p>
-              <div class="sepet-container" style="display:flex; color:white; align-items:center; width:100%;">
+              <p  class="price__heading"> ${product.price} ${product.cur}</p>
+              <div class="basket__btn__container">
               
               <svg style="background-color:#1764c0;"xmlns="http://www.w3.org/2000/svg" width=33 fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
 </svg>
-            <button onClick="onClick()" type="button" style="background-color:#2196f3; border:none; cursor:pointer;flex:1; padding:9px 0;">Sepete Ekle</button>
+            <button onClick="onClick()" class="basket__btn" type="button">Sepete Ekle</button>
 
               </div>
-              <p class="kargo" id="shipping" style="background:#eee; font-size:13px; width:70%; margin:0 auto; padding:5px 10px;">${text}</p>
+              <p class="cargo__heading" id="shipping">${text}</p>
 
               </div>
              
@@ -86,32 +86,34 @@ var swiper = new Swiper(".mySwiper", {
           text="Bugün Kargoya Verilemez";
       }
       return ` 
-              <div class="container" style="padding:10px;  flex-basis:20%; border:1px solid #eee; text-align:center; display:flex; flex-direction:column; justify-content:space-between;">
-              <a href="${product.dest_url}">
+      <div class="product">
+      <a href="${product.dest_url}">
+      <img src="${product.img}">
+      </a>
+      <div class="product__container">
+      <div class="product__img">
+      <img src="./images/star.png" width="20">
+      
+      <p class="ml-5">${product.rating}</p>
+      </div>
 
-              <img src="${product.img}">
-              </a>
-              <div style="display:flex; justify-content:center; align-items:center;">
-              <div style="display:flex; padding-right:5px; align-items:center;">
-              <img src="./images/star.png" width="20">
-              
-              <p style="margin-left:5px;">${product.rating}</p>
-              </div>
+      <p class="comment__heading" >(${product.comment} Yorum)</p>
+      </div>
+      <p class="code__heading">${product.code}</p>
 
-              <p style="color:#b7b7b7">(${product.comment} Yorum)</p>
-              </div>
-              <p style="color:#b7b7b7">${product.code}</p>
-              <p>${product.title}</p>
-              <p style="color:#1b64b9; font-size:30px; font-weight:bold;">${product.price} ${product.cur}</p>
-              <div class="sepet-container" style="display:flex; color:white; align-items:center; width:100%;">
-              
-              <svg style="background-color:#1764c0;"xmlns="http://www.w3.org/2000/svg" width=30 fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+      <p>${product.title}</p>
+      <p  class="price__heading"> ${product.price} ${product.cur}</p>
+      <div class="basket__btn__container">
+      
+      <svg style="background-color:#1764c0;"xmlns="http://www.w3.org/2000/svg" width=33 fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
 </svg>
-            <button onClick="onClick()" type="button" style="background-color:#2196f3; border:none; cursor:pointer;flex:1; padding:6px 0;">Sepete Ekle</button>
-              </div>
-              <p class="kargo" style="background:#eee; font-size:13px; width:70%; margin:0 auto; padding:5px 10px;">${text}</p>
-              </div>
+    <button onClick="onClick()" class="basket__btn" type="button">Sepete Ekle</button>
+
+      </div>
+      <p class="cargo__heading" id="shipping">${text}</p>
+
+      </div>
                        
 `
            
