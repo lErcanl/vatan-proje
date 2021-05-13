@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vatan Computer</title>
     <link rel="stylesheet" href="style.css">
     <link
     rel="stylesheet"
     href="https://unpkg.com/swiper/swiper-bundle.min.css"
   />
 </head>
-<body>
-            <div class=header>
-                <div class="header__container" style="display:flex;" >              
-                      <img src="./images/vatan.png"  width=100 alt="">
+<body>    
+    <div class="header__swipe">
+
+  <div class=header>
+                <div class="header__container" style="display:flex;" >
+                  <a href="/">            
+                      <img src="./images/vatan.png"  width="80" alt="Vatan Computer">
+                    </a>
                       <div class="header__categorie">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -32,20 +36,28 @@
                      </div>
                     </div>
                      <div class="header__person">
-                         <p>Uyelik</p>
+                       <ul>
+                         <li><a href="">Uyelik</a></li>
+                        </ul>
                          <img src="./images/man.png" width="20" alt="">
 
                      </div>
                      <div class="header__shopping">
                             <img src="./images/shopping_cart.svg" width="20" alt="">
-                            <p>Sepetim <span id="clicks">0</span></p>
+                            <ul>
+                              <li>
+                              <a href="">Sepetim<span id="clicks">0</span></a>
+                            </li>
+                          </ul>
                      </div>
                   
                 </div>
 
             </div>
+          </div>      
+
             <!-- Slider main container -->
-            <div style="display:flex;">
+            <div style="position:relative;">
                 <div class="side-img">
                 </div>
             <div class="swiper-container mySwiper">
@@ -58,43 +70,163 @@
                     <img src="/images/gelecek.png" width="100%" alt="">
 
                   </div>
-                  <div class="swiper-slide swiper-slide--third-img">                      <img src="/images/general.png" alt="">
+                  <div class="swiper-slide swiper-slide--third-img">                      
+                    <img src="/images/general.png" alt="">
                   </div>
-                  <div class="swiper-slide">Slide 4</div>
-                  <div class="swiper-slide">Slide 5</div>
-                  <div class="swiper-slide">Slide 6</div>
-                  <div class="swiper-slide">Slide 7</div>
-                  <div class="swiper-slide">Slide 8</div>
-                  <div class="swiper-slide">Slide 9</div>
+                  <div class="swiper-slide swiper-slide--first-img">
+                    <img src="/images/sony.png" alt="">
+
+                  </div>
+               
+                  <div class="swiper-slide swiper-slide--second-img">
+                    <img src="/images/gelecek.png" width="100%" alt="">
+
+                  </div>
+                  <div class="swiper-slide swiper-slide--third-img">
+                    <img src="/images/general.png" alt="">
+
+                  </div>
+                  <div class="swiper-slide swiper-slide--third-img">
+                    <img src="/images/general.png" alt="">
+
+                  </div>                
+                    
+                    <div class="swiper-slide swiper-slide--third-img">
+                    <img src="/images/general.png" alt="">
+
+                  </div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
               </div>
-              <div class="side-img">
+              <div class="side-img--second">
 
               </div>
 
             </div>
             <main style="width:80%; margin:0 auto; ">
               <div style="display:flex; justify-content: space-between; padding:25px 0;">
-              <h2 style="color:#525252; padding-top:10px;">Öne Çıkan Ürünler</h2>
+              <h1 style="color:#525252; padding-top:10px;">Öne Çıkan Ürünler</h1>
               <a href="#" style="text-decoration:none; text-transform:uppercase; font-weight: bold; font-size:13px; align-self:flex-end; color:#436c9e">Tüm Öne Çıkanlar 	&rarr;</a>
             </div>
 <div id="related" style="display:flex; flex-wrap:wrap;">
 
 </div>  
 <div style="display:flex; justify-content: space-between; padding:25px 0;">
-  <h2 style="color:#525252; padding-top:10px;">Çok Satan Ürünler</h2>
+  <h1 style="color:#525252; padding-top:10px;">Çok Satan Ürünler</h1>
   <a href="#" style="text-decoration:none; text-transform:uppercase; font-weight: bold; font-size:13px; align-self:flex-end; color:#436c9e">Tüm Çok Satanlar 	&rarr;</a>
 </div>
 <div id="seller" style="display:flex; flex-wrap:wrap;">
 
 </div>            
 </main>
-              <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <footer>
+    <div class="footer" style="width:70%; margin:0 auto; display:flex; padding-top:25px; justify-content: space-between;">
+        <div class="footer__element">
+          <h1>KURUMSAL</h1>
+
+      <div class="footer__element__container">
+        <div  class="footer__elements">
+            <ul>
+              <li><a href="">Hakkımızda</a></li>
+              <li><a href="">Müşteri Hizmetleri</a></li>
+              <li><a href="">Sipariş Aşamaları</a></li>
+              <li><a href="">Sıkça Sorulan Sorular</a></li>
+              <li><a href="">İnsan Kaynakları</a></li>
+              <li><a href="">Gizlilik Politikamız</a></li>
+            </ul>
+        </div>
+        <div class="footer__elements">
+          <ul>
+            <li><a href="">İletişim</a></li>
+            <li><a href="">Vatan Card</a></li>
+            <li><a href="">Servis Takip formu</a></li>
+            <li><a href="">Mağazalar</a></li>
+            <li><a href="">İşlem Rehberi</a></li>
+          </ul>
+      
+
+      </div>
+    </div>
+     
+
+</div>
+
+
+
+<div class="footer__element">
+  <h1>KATEGORİLER</h1>
+
+<div class="footer__element__container">
+<div class="footer__elements">
+  <ul>
+    <li><a href="">Bilgisayar</a></li>
+    <li><a href="">Cep Telefonu</a></li>
+    <li><a href="">Tablet Pc</a></li>
+    <li><a href="">Akıllı Saat</a></li>
+    <li><a href="">Vestel TV</a></li>
+    <li><a href="">Oyun Bilgisayarı</a></li>
+
+  </ul>
+
+</div>
+<div class="footer__elements">
+  <ul>
+    <li><a href="">Küçük Ev Aletleri</a></li>
+    <li><a href="">Kişisel Bakım Ürünleri</a></li>
+    <li><a href="">Servis Takip Formu</a></li>
+    <li><a href="">Ütü</a></li>
+    <li><a href="">Masaüstü Bilgisayar</a></li>
+    <li><a href="">Sabit Diskler</a></li>
+
+  </ul>
+
+</div>
+</div>
+</div>
+
+<div class="footer__element">
+  <h1>ÖZEL ÜRÜNLER</h1>
+<div class="footer__element__container">
+<div class="footer__elements">
+  <ul>
+    <li><a href="">iPhone 7</a></li>
+    <li><a href="">iPhone 6S</a></li>
+    <li><a href="">iPhone 5S</a></li>
+    <li><a href="">iPhone 5E</a></li>
+    <li><a href="">General Mobile 5 Plus</a></li>
+    <li><a href="">Galaxy S7</a></li>
+    <li><a href="">Note 5</a></li>
+    <li><a href="">Galaxy S6</a></li>
+  </ul>
+    
+</div>
+</div>
+
+</div>
+
+      </div>
+      <div style="border-top:1px solid #eee; margin:50px 0;"></div>
+      <div class="footer__last--container" style="width:80%; margin:0 auto;display:flex; align-items: center; justify-content: space-between;">
+      <div class="footer__last">
+          <p style="color:#a7a7a7; font-weight: bold;">Türkiye'nin Teknoloji Hiperstoru</p>
+          <p style="color:#a7a7a7;">Copyright 2016 Vatan Bilgisayar San. ve Tic. A.Ş.</p>
+      </div>
+      <div style="display: flex; align-items: center;">
+          <img width="100" src="./images/express.jpeg" alt="express">
+          <img width="100" src="./images/master.png" alt="master-visa">
+          <img width="100" src="./images/norton.jpg" alt="norton">
+
+
+      </div>
+    </div>
+    </footer>
+                  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
 
 <script src="./source.js">
+    
     
 
 </script>
